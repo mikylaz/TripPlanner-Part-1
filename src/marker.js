@@ -1,4 +1,4 @@
-import mapbox from "mapbox-gl";
+import mapboxgl from "mapbox-gl";
 
 const iconURLs = {
     hotels: "http://i.imgur.com/D9574Cu.png",
@@ -7,8 +7,15 @@ const iconURLs = {
 };
 
 const buildMarker = function(type, coords) {
-    // Your Code Here
-    
+    const markerDomEl = document.createElement("div");
+    markerDomEl.style.width = "32px";
+    markerDomEl.style.height = "39px";
+    // if (type == 'hotels'){
+    markerDomEl.style.backgroundImage = `url(${iconURLs[type]})`;
+    // }
+   new mapboxgl.Marker(markerDomEl).setLngLat(coords);
+
+
 };
 
-export default buildMarker;</
+export default buildMarker;
