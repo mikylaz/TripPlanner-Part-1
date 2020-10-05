@@ -1,0 +1,27 @@
+{
+  "name": "tripplanner-part-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwmaranto/TripPlanner-Part-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwmaranto/TripPlanner-Part-1/issues"
+  },
+  "homepage": "https://github.com/lwmaranto/TripPlanner-Part-1#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "mapbox-gl": "^1.12.0"
+  }
+}
