@@ -10,10 +10,8 @@ const buildMarker = function(type, coords) {
     const markerDomEl = document.createElement("div");
     markerDomEl.style.width = "32px";
     markerDomEl.style.height = "39px";
-    // if (type == 'hotels'){
     markerDomEl.style.backgroundImage = `url(${iconURLs[type]})`;
-    // }
-   new mapboxgl.Marker(markerDomEl).setLngLat(coords);
+    return new mapboxgl.Marker(markerDomEl).setLngLat(coords);
 
 
 };

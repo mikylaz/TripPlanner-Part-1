@@ -20,7 +20,9 @@ markerDomEl.style.height = "39px";
 markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
-const marker = buildMarker("hotels", [-87.6354, 41.8885]); // or [-87.6354, 41.8885]
 
+
+
+const marker = buildMarker("hotels", [-87.6354, 41.8885]); // or [-87.6354, 41.8885]
 marker.addTo(map)
 
